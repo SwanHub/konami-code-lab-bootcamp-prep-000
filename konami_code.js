@@ -12,5 +12,7 @@ const codes = [
 ];
 
 function init() {
-  
+  if (i === codes.length) {
+    alert('you did it.');
+  }
 }
