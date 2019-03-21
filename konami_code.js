@@ -15,7 +15,7 @@ var i = 0;
 
 function init() {
   if (i === codes.length) {
-    alert("you did it!");
+    window.alert("you did it!");
     console.log("Booyah!")
   }
 }
