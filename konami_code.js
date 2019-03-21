@@ -25,8 +25,8 @@ function init() {
 body.addEventListener('keydown', function(e) {
     if (e.key === codes[i]) {
         console.log(`key ${i} has been pressed. ${codes[i]}`)
-        i++;
         init();
+        i++;
     } else {
         i = 0;
         console.log("back to square one");
