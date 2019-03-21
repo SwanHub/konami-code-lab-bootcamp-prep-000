@@ -12,6 +12,7 @@ const codes = [
 ];
 
 var i = 0;
+var body = document.body;
 
 function init() {
   if (i === codes.length - 1) {
@@ -20,3 +21,14 @@ function init() {
     i = 0;
   }
 }
+
+body.addEventListener('keydown', function(e) {
+    if (e.key === codes[i]) {
+        console.log(`key ${i} has been pressed. ${codes[i]}`)
+        i++;
+        init();
+    } else {
+        i = 0;
+        console.log("back to square one");
+    }
+});
