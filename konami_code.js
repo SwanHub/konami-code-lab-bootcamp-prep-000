@@ -11,7 +11,7 @@ const codes = [
   "a"
 ];
 
-const i = 0;
+var i = 0;
 
 function init() {
   if (i === codes.length) {
